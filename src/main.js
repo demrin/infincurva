@@ -4,9 +4,12 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 
+Vue.use(router);
+
 Vue.config.productionTip = false
 
 const routers = [
+  { path: '/', redirect: '/index' },
   { path: '/first', components: resolve => require(['./pages/index.vue']), resolve }
 ]
 
@@ -14,10 +17,15 @@ const router = new router({
   routers
 })
 
-/* eslint-disable no-new */
-new Vue({
-  el: '#app',
+const app = new Vue({
   router,
-  template: '<App/>',
-  components: { App }
-})
+  render: h => h(App)
+}).$mount('#app');
+
+/* eslint-disable no-new */
+// new Vue({
+//   el: '#app',
+//   router,
+//   template: '<App/>',
+//   components: { App }
+// })
