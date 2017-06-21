@@ -5,7 +5,7 @@
 ## Build Setup
 
 ``` bash
-# 基础安装
+# 安装基础依赖
 npm install
 
 # 运行端口 localhost:3000
