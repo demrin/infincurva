@@ -1,17 +1,18 @@
 # infincurva
 
 > infincurva create by vue-cli
+> 基于vue-cli搭建的单页面应用
 
 ## Build Setup
 
-``` bash
-# install dependencies
+``` 
+# 基础依赖安装
 npm install
 
-# serve with hot reload at localhost:8080
+# 运行端口localhost:3000
 npm run dev
 
-# build for production with minification
+# 运行生产环境
 npm run build
 
 # build for production and view the bundle analyzer report
